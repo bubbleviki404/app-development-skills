@@ -95,6 +95,6 @@ Whenever states or screens are expanded, compare every contracted frame/state ag
 - Limit the first round to one core screen/state and one visual calibration.
 - Do not multiply an unapproved direction across screens.
 - Do not run Builder/Evaluator/Sealer roles, blind scoring, evidence sealing, or multi-role release review.
-- Leave product and accessibility review to the later GapLab release workflow.
+- Respect product and accessibility constraints relevant to the current UI, and leave broader release-readiness review to the project's own workflow.
 
 If browser execution, screenshot capture, simulator access, or visual inspection is unavailable, disclose the limitation. Perform available static checks on structure, scripts, assets, and state coverage, then ask the user to open the artifact. Never claim that visual testing passed without seeing the rendered result.
