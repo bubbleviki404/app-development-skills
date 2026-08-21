@@ -1,0 +1,4 @@
+interface:
+  display_name: "Testing"
+  short_description: "Coverage campaigns and independent fix verification"
+  default_prompt: "Use $testing to test product surfaces and risk dimensions, or independently verify an implemented bug fix with regression evidence."

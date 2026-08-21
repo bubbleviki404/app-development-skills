@@ -29,6 +29,10 @@ Local Working Skills → Curated Public Skills → Stable Public Release
 
 验证工程风险、修复安全的问题，并建立或更新可信工程基线。
 
+### [`testing`](skills/testing/)
+
+围绕产品面和风险维度执行 coverage-driven 的真实 App 测试，并独立验证已实现的修复。
+
 每个 Skill 都是独立 bundle。项目只需选择实际相关的 Skill；只有真正整理并公开到本仓库的 Skill 才会加入此列表。
 
 ## Architecture / 架构
@@ -37,15 +41,15 @@ Local Working Skills → Curated Public Skills → Stable Public Release
 
 ## Status / 状态
 
-**GitHub 仓库已公开 · `ship-real-mvp`、`adapt-ui-from-references` 与 `code-review` 均为 Public Release Candidate**
+**GitHub 仓库已公开 · `ship-real-mvp`、`adapt-ui-from-references`、`code-review` 与 `testing` 均为 Public Release Candidate**
 
-GitHub repository 现已公开。`ship-real-mvp` 仍是基于一轮有边界真实 App direct pilot 的 Public Release Candidate，Human Packaging Review 已通过；`adapt-ui-from-references` 与 `code-review` 是基于当前整理后公开 bundle 的 Public Release Candidate。没有任何 Skill 被声明为 Released v1.0；这些能力都不是 production-proven。后续版本提升、Tag、GitHub Release、package publication 及其他正式 release 操作仍由 Human 控制。
+GitHub repository 现已公开。`ship-real-mvp` 仍是基于一轮有边界真实 App direct pilot 的 Public Release Candidate，Human Packaging Review 已通过；`adapt-ui-from-references`、`code-review` 与 `testing` 是基于当前整理后公开 bundle 的 Public Release Candidate。没有任何 Skill 被声明为 Released v1.0；这些能力都不是 production-proven。后续版本提升、Tag、GitHub Release、package publication 及其他正式 release 操作仍由 Human 控制。
 
 ## 安装 / 使用
 
 `skills/` 下的每个目录都是可分发的 Skill bundle。对于支持 Agent Skills 的 host，请使用该 host 提供的 Skill import 或 installation mechanism 安装或导入对应目录。本仓库不假设所有平台共用同一个安装路径。
 
-在 host 支持显式 Skill invocation 时，使用 `$ship-real-mvp`、`$adapt-ui-from-references` 或 `$code-review` 调用。
+在 host 支持显式 Skill invocation 时，使用 `$ship-real-mvp`、`$adapt-ui-from-references`、`$code-review` 或 `$testing` 调用。
 
 示例：
 
@@ -54,6 +58,7 @@ GitHub repository 现已公开。`ship-real-mvp` 仍是基于一轮有边界真�
 - 使用 `$ship-real-mvp` 继续一个 runnable MVP，不重新开始已经有效的产品探索。
 - 使用 `$adapt-ui-from-references` 将视觉参考整理为一个经过校准的核心界面，再扩展 UI。
 - 使用 `$code-review` 验证工程风险、修复安全的问题，并建立或更新可信工程基线。
+- 使用 `$testing` 通过 risk-driven 的真实 App 覆盖发现产品 Bug，或独立验证已实现的修复。
 
 列表中的每个 bundle 都可以独立使用。只有新的 Skill 真正成为公开组件后，才会加入当前公开 Skills 列表。
 

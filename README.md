@@ -28,6 +28,10 @@ Analyze visual references, calibrate one high-fidelity core screen, and expand o
 
 Verify engineering risks, repair safe findings, and establish or update a trusted engineering baseline.
 
+### [`testing`](skills/testing/)
+
+Run coverage-driven real-app testing across product surfaces and risk dimensions, and independently verify implemented fixes.
+
 Each Skill is an independent bundle. Choose only the Skills relevant to your project; new Skills are listed here only after they are publicly curated in this repository.
 
 ## Architecture
@@ -36,15 +40,15 @@ Each Skill remains an independently maintainable unit. Projects can use only the
 
 ## Status
 
-**Repository Published · `ship-real-mvp`, `adapt-ui-from-references`, and `code-review` Public Release Candidates**
+**Repository Published · `ship-real-mvp`, `adapt-ui-from-references`, `code-review`, and `testing` Public Release Candidates**
 
-This GitHub repository is public. `ship-real-mvp` remains a Public Release Candidate based on one bounded direct real-App pilot, and its Human Packaging Review has passed. `adapt-ui-from-references` and `code-review` are Public Release Candidates based on their curated public bundles; no Skill is declared Released v1.0 here. The capabilities are not production-proven. Future version promotion, tags, GitHub Releases, package publication, and other release actions remain Human-controlled.
+This GitHub repository is public. `ship-real-mvp` remains a Public Release Candidate based on one bounded direct real-App pilot, and its Human Packaging Review has passed. `adapt-ui-from-references`, `code-review`, and `testing` are Public Release Candidates based on their curated public bundles; no Skill is declared Released v1.0 here. The capabilities are not production-proven. Future version promotion, tags, GitHub Releases, package publication, and other release actions remain Human-controlled.
 
 ## Install / Use
 
 Each directory under `skills/` is a distributable Skill bundle. On a host that supports Agent Skills, use that host's Skill import or installation mechanism to install or import the directory. This repository does not assume a universal installation path.
 
-Invoke `$ship-real-mvp`, `$adapt-ui-from-references`, or `$code-review` where the host supports explicit Skill invocation.
+Invoke `$ship-real-mvp`, `$adapt-ui-from-references`, `$code-review`, or `$testing` where the host supports explicit Skill invocation.
 
 Example uses:
 
@@ -53,6 +57,7 @@ Example uses:
 - Use `$ship-real-mvp` to continue a runnable MVP without restarting valid product discovery.
 - Use `$adapt-ui-from-references` to turn visual references into one calibrated core screen before scaling the UI.
 - Use `$code-review` to verify engineering risks, repair safe findings, and establish or update a trusted engineering baseline.
+- Use `$testing` to discover product bugs through risk-driven real-app coverage or independently verify an implemented fix.
 
 Each listed bundle is usable on its own. Additional Skills will be listed here only when they become public components.
 

@@ -14,6 +14,8 @@
 - Why: make the current Reference UI workflow available as an independently invokable public component under a stable name.
 - What: published the curated `code-review` Skill bundle and synchronized the bilingual repository documentation.
 - Why: make the current engineering review and scoped repair workflow available as an independently invokable public component under a stable name.
+- What: published the curated `testing` Skill bundle and synchronized the bilingual repository documentation.
+- Why: make the current coverage-driven real-App testing and independent fix-verification workflow available as an independently invokable public component under a stable name.
 
 ### 中文
 
@@ -27,3 +29,5 @@
 - Why：以稳定公开名提供当前 Reference UI workflow，使其成为可独立调用的公开组件。
 - What：发布整理后的 `code-review` Skill bundle，并同步中英文仓库文档。
 - Why：以稳定公开名提供当前工程审查与范围化修复 workflow，使其成为可独立调用的公开组件。
+- What：发布整理后的 `testing` Skill bundle，并同步中英文仓库文档。
+- Why：以稳定公开名提供当前 coverage-driven 真实 App 测试与独立修复验证 workflow，使其成为可独立调用的公开组件。
