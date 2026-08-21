@@ -1,11 +1,9 @@
 ---
 name: ios-submission-ops
-description: Guide one Ready Final Candidate through Apple Developer and App Store Connect operations, Archive, Validate, Upload, Submit for Review, and verified Waiting for Review closeout. Use when a project is Ready for Submission Operations with a Final Candidate, Trusted Engineering Baseline, still-valid Testing evidence, and Release Readiness handoff; preserve upstream evidence, orient the user through a nine-step journey, and route Candidate-affecting changes back to the owning GapLab skill instead of repeating testing, code review, or release readiness.
+description: Guide one Ready Final Candidate through Apple Developer and App Store Connect operations, Archive, Validate, Upload, Submit for Review, and verified Waiting for Review closeout. Use when a project is Ready for Submission Operations with a Final Candidate, Trusted Engineering Baseline, still-valid Testing evidence, and Release Readiness handoff; preserve upstream evidence, orient the user through a nine-step journey, and route Candidate-affecting changes back to the appropriate upstream Skill instead of repeating testing, code review, or release readiness.
 ---
 
 # iOS Submission Ops
-
-Release status: **`v1.0 — PILOT READY`**. This version inherits domain lessons from one completed real submission route. The new GapLab full-chain integration and User Journey / Position Contract still need validation on the next complete product; do not call this skill universally proven.
 
 ## Definition
 
@@ -28,7 +26,7 @@ Do not repeat Full Testing, Initial Code Review, Full Release Readiness, archite
 
 Read [submission-sop.md](references/submission-sop.md) before material work. Use the templates only after deriving runtime product facts; never write runtime values back into this reusable package.
 
-## Entry Contract and GapLab Routing
+## Entry Contract and Routing
 
 Enter normally with:
 
@@ -44,10 +42,10 @@ Submission Ops consumes the Final Candidate; it does not reshape or independentl
 
 Route instead of copying another Skill:
 
-- missing, invalid, or materially stale Release Readiness → `gaplab-ios-release-readiness-mini-01`;
-- source, binary, dependency, or configuration change invalidating the Trusted Engineering Baseline → `gaplab-code-review-01` Change Review;
-- change that may affect product behavior → `gaplab-testing-mini-01` Delta Testing / Fix Verification;
-- reopened product direction, scope, or core experience → `gaplab-ship-real-mvp-03`.
+- missing, invalid, or materially stale Release Readiness → `$ios-release-readiness`;
+- source, binary, dependency, or configuration change invalidating the Trusted Engineering Baseline → `$code-review` Change Review;
+- change that may affect product behavior → `$testing` Delta Testing / Fix Verification;
+- reopened product direction, scope, or core experience → `$ship-real-mvp`.
 
 Consume the public handoff of each upstream Skill. Do not reproduce its internal workflow, campaign, review system, or tracker. Historical reports may contribute evidence, but the current interface is the Trusted Engineering Baseline, Testing handoff, Final Candidate, and Release Readiness handoff.
 

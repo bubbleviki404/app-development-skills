@@ -20,3 +20,4 @@ When publishing a Skill component:
 8. If publication is explicitly authorized and clean-path checks pass, normal commit and push may continue without intermediate Human prompts.
 9. When Human explicitly says “publish” for an existing public repository and clean-path checks pass, complete publication directly to `main`; use a PR or Draft PR only when Human requests review/PR flow or a real blocker requires review.
 10. Tags, GitHub Releases, v1.0 promotion, unclear rights, credentials, destructive actions, or unresolved risk require a separate Human decision.
+11. Public Skill content must be self-contained and public-neutral. Remove internal working-version or maturity labels, private workflow/stage names, private Skill IDs, and author/host-specific preferences. Cross-Skill routing must use stable public Skill names.

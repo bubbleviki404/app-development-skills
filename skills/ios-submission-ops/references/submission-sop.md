@@ -1,6 +1,6 @@
 # App Store Submission SOP — Internal Gate Detail
 
-Working detail for `ios-submission-ops v1.0`. Apply by applicability, not as a mandatory matrix. Internal gates remain Agent-owned; expose only the nine-step journey, current meaningful module, location, action owner, completion state, and next module.
+Working detail for `ios-submission-ops`. Apply by applicability, not as a mandatory matrix. Internal gates remain Agent-owned; expose only the nine-step journey, current meaningful module, location, action owner, completion state, and next module.
 
 ## Contents
 
@@ -74,7 +74,7 @@ approved assets, privacy/support facts, and submission intent
 
 Confirm that all release-affecting state belongs to the Candidate and that unknown local work does not enter it. Never clean, stash, delete, or alter unrelated work.
 
-If the handoff is absent, invalid, or materially stale, route to `gaplab-ios-release-readiness-mini-01`. Do not reconstruct Full Readiness here.
+If the handoff is absent, invalid, or materially stale, route to `$ios-release-readiness`. Do not reconstruct Full Readiness here.
 
 User outcome: `① App 已经准备好` means one exact Final Candidate is identified and bound to still-valid upstream evidence.
 
@@ -413,7 +413,7 @@ missing review/demo information  → Gate 7 Review Information / ASC response
 binary/config/package change     → Candidate invalidation + Readiness refresh
 source/dependency change         → Code Review Change Review + Readiness refresh
 behavior-affecting fix           → Testing Delta + Readiness refresh
-product/guideline interpretation → product decision via gaplab-ship-real-mvp-03
+product/guideline interpretation → product decision via $ship-real-mvp
 new binary required              → new Final Candidate + resume at Gate 8
 ```
 
