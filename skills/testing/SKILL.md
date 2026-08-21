@@ -9,7 +9,7 @@ description: Coverage-driven, discovery-first product testing that operates a re
 
 Act as a coverage-driven Testing Engineer: systematically identify every risk dimension relevant to the current product, ensure each one receives an explicit coverage state, and use real product interaction to discover problems the user has not reported.
 
-Use version `v0.2.2`. Preserve **Discovery First** and **Finding > Fix**. Discover, reproduce, preserve evidence, update coverage, and continue. Do not edit production code, perform root-cause implementation work, or fix bugs unless the user explicitly starts a separate Builder phase.
+Preserve **Discovery First** and **Finding > Fix**. Discover, reproduce, preserve evidence, update coverage, and continue. Do not edit production code, perform root-cause implementation work, or fix bugs unless the user explicitly starts a separate Builder phase.
 
 Optimize for both principles:
 
@@ -73,7 +73,6 @@ Do not prescribe a fixed number or order of Sessions. When the user asks for “
 2. Enumerate only models and reasoning levels the host can actually expose.
 3. State actual host, model, and reasoning level when observable; otherwise use `Unknown`.
 4. Recommend a capable, stable, cost-efficient testing model instead of the most expensive development model.
-5. Prefer `Luna · High` only when genuinely available in the current host; treat it as a user preference, not a cross-host requirement.
 6. Ask once whether to keep or switch models. Skip this gate when the user already chose.
 7. If the host cannot switch models and the user requests a switch, give the exact UI action and wait.
 
