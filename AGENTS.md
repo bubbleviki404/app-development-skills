@@ -18,4 +18,5 @@ When publishing a Skill component:
 6. Update only the public documentation affected by the new component.
 7. Treat additional provenance, maturity, evidence, or historical review as exception-driven, not mandatory.
 8. If publication is explicitly authorized and clean-path checks pass, normal commit and push may continue without intermediate Human prompts.
-9. Tags, GitHub Releases, v1.0 promotion, unclear rights, credentials, destructive actions, or unresolved risk require a separate Human decision.
+9. When Human explicitly says “publish” for an existing public repository and clean-path checks pass, complete publication directly to `main`; use a PR or Draft PR only when Human requests review/PR flow or a real blocker requires review.
+10. Tags, GitHub Releases, v1.0 promotion, unclear rights, credentials, destructive actions, or unresolved risk require a separate Human decision.
