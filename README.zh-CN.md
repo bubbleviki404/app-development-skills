@@ -37,6 +37,10 @@ Local Working Skills → Curated Public Skills → Stable Public Release
 
 验证一个明确的 iOS Release Candidate，并判断它是否可以安全进入 App Store 提交流程。
 
+### [`ios-submission-ops`](skills/ios-submission-ops/)
+
+带领一个 Ready Final Candidate 完成 Apple Developer、App Store Connect、Archive、Validate、Upload、Submit for Review，并确认进入 Waiting for Review。
+
 每个 Skill 都是独立 bundle。项目只需选择实际相关的 Skill；只有真正整理并公开到本仓库的 Skill 才会加入此列表。
 
 ## Architecture / 架构
@@ -45,15 +49,15 @@ Local Working Skills → Curated Public Skills → Stable Public Release
 
 ## Status / 状态
 
-**GitHub 仓库已公开 · `ship-real-mvp`、`adapt-ui-from-references`、`code-review`、`testing` 与 `ios-release-readiness` 均为 Public Release Candidate**
+**GitHub 仓库已公开 · `ship-real-mvp`、`adapt-ui-from-references`、`code-review`、`testing`、`ios-release-readiness` 与 `ios-submission-ops` 均为 Public Release Candidate**
 
-GitHub repository 现已公开。`ship-real-mvp` 仍是基于一轮有边界真实 App direct pilot 的 Public Release Candidate，Human Packaging Review 已通过；`adapt-ui-from-references`、`code-review`、`testing` 与 `ios-release-readiness` 是基于当前整理后公开 bundle 的 Public Release Candidate。没有任何 Skill 被声明为 Released v1.0；这些能力都不是 production-proven。后续版本提升、Tag、GitHub Release、package publication 及其他正式 release 操作仍由 Human 控制。
+GitHub repository 现已公开。`ship-real-mvp` 仍是基于一轮有边界真实 App direct pilot 的 Public Release Candidate，Human Packaging Review 已通过；`adapt-ui-from-references`、`code-review`、`testing`、`ios-release-readiness` 与 `ios-submission-ops` 是基于当前整理后公开 bundle 的 Public Release Candidate。没有任何 Skill 被声明为 Released v1.0；这些能力都不是 production-proven。后续版本提升、Tag、GitHub Release、package publication 及其他正式 release 操作仍由 Human 控制。
 
 ## 安装 / 使用
 
 `skills/` 下的每个目录都是可分发的 Skill bundle。对于支持 Agent Skills 的 host，请使用该 host 提供的 Skill import 或 installation mechanism 安装或导入对应目录。本仓库不假设所有平台共用同一个安装路径。
 
-在 host 支持显式 Skill invocation 时，使用 `$ship-real-mvp`、`$adapt-ui-from-references`、`$code-review`、`$testing` 或 `$ios-release-readiness` 调用。
+在 host 支持显式 Skill invocation 时，使用 `$ship-real-mvp`、`$adapt-ui-from-references`、`$code-review`、`$testing`、`$ios-release-readiness` 或 `$ios-submission-ops` 调用。
 
 示例：
 
@@ -64,6 +68,7 @@ GitHub repository 现已公开。`ship-real-mvp` 仍是基于一轮有边界真�
 - 使用 `$code-review` 验证工程风险、修复安全的问题，并建立或更新可信工程基线。
 - 使用 `$testing` 通过 risk-driven 的真实 App 覆盖发现产品 Bug，或独立验证已实现的修复。
 - 使用 `$ios-release-readiness` 检查一个明确的 iOS Release Candidate，并判断它是否可以进入 App Store 提交流程。
+- 使用 `$ios-submission-ops` 带领一个 Ready Final Candidate 完成提交流程，并确认进入 Waiting for Review。
 
 列表中的每个 bundle 都可以独立使用。只有新的 Skill 真正成为公开组件后，才会加入当前公开 Skills 列表。
 

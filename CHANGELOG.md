@@ -18,6 +18,8 @@
 - Why: make the current coverage-driven real-App testing and independent fix-verification workflow available as an independently invokable public component under a stable name.
 - What: published the curated `ios-release-readiness` Skill bundle and synchronized the bilingual repository documentation.
 - Why: make the current iOS Release Candidate readiness workflow available as an independently invokable public component under a stable name.
+- What: published the curated `ios-submission-ops` Skill bundle and synchronized the bilingual repository documentation.
+- Why: make the current iOS submission operations workflow available as an independently invokable public component under a stable name.
 
 ### 中文
 
@@ -35,3 +37,5 @@
 - Why：以稳定公开名提供当前 coverage-driven 真实 App 测试与独立修复验证 workflow，使其成为可独立调用的公开组件。
 - What：发布整理后的 `ios-release-readiness` Skill bundle，并同步中英文仓库文档。
 - Why：以稳定公开名提供当前 iOS Release Candidate readiness workflow，使其成为可独立调用的公开组件。
+- What：发布整理后的 `ios-submission-ops` Skill bundle，并同步中英文仓库文档。
+- Why：以稳定公开名提供当前 iOS submission operations workflow，使其成为可独立调用的公开组件。

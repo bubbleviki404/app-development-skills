@@ -1,0 +1,6 @@
+interface:
+  display_name: "iOS Submission Ops"
+  short_description: "Guide a Ready iOS Candidate to Waiting for Review"
+  default_prompt: "Use $ios-submission-ops to guide this Ready Final Candidate through Apple Developer, App Store Connect, Archive, Validate, Upload, Submit for Review, and verified Waiting for Review while keeping me oriented in the nine-step journey."
+policy:
+  allow_implicit_invocation: true
