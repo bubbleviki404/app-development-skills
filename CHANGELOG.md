@@ -12,6 +12,8 @@
 - Why: keep future Skill publication user-facing, safe, and lightweight.
 - What: published the curated `adapt-ui-from-references` Skill bundle and synchronized the bilingual repository documentation.
 - Why: make the current Reference UI workflow available as an independently invokable public component under a stable name.
+- What: published the curated `code-review` Skill bundle and synchronized the bilingual repository documentation.
+- Why: make the current engineering review and scoped repair workflow available as an independently invokable public component under a stable name.
 
 ### 中文
 
@@ -23,3 +25,5 @@
 - Why：让未来的 Skill 发布保持面向用户、安全且轻量。
 - What：发布整理后的 `adapt-ui-from-references` Skill bundle，并同步中英文仓库文档。
 - Why：以稳定公开名提供当前 Reference UI workflow，使其成为可独立调用的公开组件。
+- What：发布整理后的 `code-review` Skill bundle，并同步中英文仓库文档。
+- Why：以稳定公开名提供当前工程审查与范围化修复 workflow，使其成为可独立调用的公开组件。

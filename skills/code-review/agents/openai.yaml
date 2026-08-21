@@ -1,0 +1,5 @@
+interface:
+  name: "code-review"
+  display_name: "Code Review"
+  short_description: "Verify engineering risks and repair safe findings"
+  default_prompt: "Use $code-review to verify engineering risks, repair safe findings, and establish or update a trusted engineering baseline."
