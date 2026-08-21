@@ -1,0 +1,5 @@
+interface:
+  name: "ship-real-mvp"
+  display_name: "Ship Real MVP"
+  short_description: "Move a real product toward a stable, actively tested MVP"
+  default_prompt: "Use $ship-real-mvp to take over the current product reality and move it toward a stable, actively tested MVP."
