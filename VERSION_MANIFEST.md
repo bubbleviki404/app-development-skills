@@ -5,9 +5,9 @@
 **Public Release Candidate / Human Packaging Review passed**
 **公开发布候选 / Human Packaging Review 已通过**
 
-This file records packaged candidates. It does not declare Released v1.0 or authorize external publication. Formal version, component, and publication approval require Human Review.
+This file records packaged public candidates. The GitHub repository is public, but this manifest does not declare any Skill Released v1.0. Formal version promotion, tags, GitHub Releases, and future component publication require Human Review.
 
-本文件记录已打包的候选组件，但不声明 Released v1.0，也不授权对外发布。正式版本、组件和发布确认需要 Human Review。
+本文件记录已打包并公开展示的候选组件。GitHub 仓库现已公开，但本文件不声明任何 Skill 已 Released v1.0。正式版本提升、Tag、GitHub Release 及后续组件发布仍需要 Human Review。
 
 ## Candidate components / 候选组件
 

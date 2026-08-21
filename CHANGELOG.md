@@ -4,6 +4,8 @@
 
 ### English
 
+- What: synchronized repository documentation with the completed GitHub publication state.
+- Why: distinguish public repository availability from Skill version release and production maturity.
 - What: assembled the curated `ship-real-mvp` public package; abstracted private/internal assumptions; added minimal PRODUCT / ENGINEERING templates and a provenance record.
 - Why: align the public package with the current 03 mainline, preserve portability, keep specialist dependencies optional, and maintain evidence and rights boundaries.
 - What: moved internal audit evidence outside the future public repository; made repository instructions host-neutral; added public install/use and limitation guidance.
@@ -16,6 +18,8 @@
 
 ### 中文
 
+- What：将仓库文档同步为 GitHub repository 已公开的真实状态。
+- Why：明确区分仓库公开、Skill 正式版本发布与 production maturity。
 - What：整理 `ship-real-mvp` 公开 package；抽象私有/内部假设；加入最小 PRODUCT / ENGINEERING templates 和 provenance record。
 - Why：使公开 package 与当前 03 mainline 对齐，保持可移植性，让 specialist 依赖保持 optional，并维护 evidence 与 rights 边界。
 - What：将内部审计 evidence 移出 future public repository；将仓库说明改为 host-neutral；加入面向 public user 的安装/使用和限制说明。

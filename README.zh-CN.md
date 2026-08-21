@@ -13,7 +13,7 @@ Local Working Skills → Curated Public Skills → Stable Public Release
 本地工作 Skill → 精选公开 Skill → 稳定公开发布
 ```
 
-本地工作源需要先经过检查、验证、隐私/来源/依赖审计，再整理到这里。对外发布仍然需要 Human Review。
+本地工作源需要先经过检查、验证、隐私/来源/依赖审计，再整理到这里。后续版本提升和正式 release 决策仍由 Human 控制。
 
 ## Architecture / 架构
 
@@ -39,10 +39,9 @@ Submission Operations（仅在明确需要时）
 
 ## Status / 状态
 
-**Public Release Candidate / Human Packaging Review passed**
-**公开发布候选 / Human Packaging Review 已通过**
+**GitHub 仓库已公开 · `ship-real-mvp` 仍为 Public Release Candidate**
 
-本仓库目前不是 production-proven suite。`ship-real-mvp` 已基于一轮有边界的真实 App direct pilot 形成公开发布候选，Human Packaging Review 已通过。但没有任何 Skill 被声明为 Released v1.0，对外发布仍是独立的 Human-controlled decision。本仓库记录证据、成熟度、公开安全风险和建议。
+GitHub repository 现已公开。`ship-real-mvp` 仍是基于一轮有边界真实 App direct pilot 的 Public Release Candidate，Human Packaging Review 已通过。没有任何 Skill 被声明为 Released v1.0；该能力不是 production-proven。后续版本提升、Tag、GitHub Release、package publication 及其他正式 release 操作仍由 Human 控制。
 
 ## 安装 / 使用
 
@@ -63,7 +62,7 @@ Testing、Code Review、Release Readiness 和 Submission Operations 都是 optio
 - 当前证据包含一轮有边界的真实 App direct pilot。
 - 该能力不是 production-proven。
 - 并非每一条 optional specialist route 都有 direct validation。
-- 对外 release 和 publication 仍由 Human 控制。
+- 后续版本提升、Tag、GitHub Release 及其他正式 release 操作仍由 Human 控制。
 
 ## Scope and boundaries / 范围与边界
 

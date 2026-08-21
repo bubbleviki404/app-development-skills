@@ -12,7 +12,7 @@ This repository is a curated public release channel, not a backup of a local wor
 Local Working Skills → Curated Public Skills → Stable Public Release
 ```
 
-The local working source is inspected, validated, privacy/provenance/dependency-audited, and then curated here. External publication remains a separate Human decision.
+The local working source is inspected, validated, privacy/provenance/dependency-audited, and then curated here. Future version promotion and formal release decisions remain Human-controlled.
 
 ## Architecture
 
@@ -38,9 +38,9 @@ Projects may enter, skip, or revisit these capabilities according to evidence an
 
 ## Status
 
-**Public Release Candidate / Human Packaging Review passed**
+**Repository Published · `ship-real-mvp` Public Release Candidate**
 
-This repository is not a production-proven suite. `ship-real-mvp` has a packaged public release candidate based on one bounded direct real-App pilot, and its Human Packaging Review has passed. No Skill is declared Released v1.0 here, and external publication remains a separate Human-controlled decision. The public records describe the package's evidence boundary, maturity, and safety limitations.
+This GitHub repository is public. `ship-real-mvp` remains a Public Release Candidate based on one bounded direct real-App pilot, and its Human Packaging Review has passed. No Skill is declared Released v1.0 here. The capability is not production-proven. Future version promotion, tags, GitHub Releases, package publication, and other release actions remain Human-controlled.
 
 ## Install / Use
 
@@ -61,7 +61,7 @@ Testing, Code Review, Release Readiness, and Submission Operations are optional 
 - Current evidence includes one bounded direct real-App pilot.
 - The capability is not production-proven.
 - Not every optional specialist route has direct validation.
-- External release and publication remain Human-controlled.
+- Future version promotion, tags, GitHub Releases, and other release actions remain Human-controlled.
 
 ## Scope and boundaries
 
