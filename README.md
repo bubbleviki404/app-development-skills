@@ -12,29 +12,19 @@ This repository is a curated public release channel, not a backup of a local wor
 Local Working Skills → Curated Public Skills → Stable Public Release
 ```
 
-The local working source is inspected, validated, privacy/provenance/dependency-audited, and then curated here. Future version promotion and formal release decisions remain Human-controlled.
+The local working source is inspected, validated, and curated here. Future version promotion and formal release decisions remain Human-controlled.
+
+## Skills
+
+### [`ship-real-mvp`](skills/ship-real-mvp/)
+
+Take over an existing app and move it toward the smallest runnable, evidence-aware MVP loop.
+
+Each Skill is an independent bundle. Choose only the Skills relevant to your project; new Skills are listed here only after they are publicly curated in this repository.
 
 ## Architecture
 
-Each Skill remains an independently maintainable unit. The future suite will describe how the units relate, while avoiding a mandatory waterfall pipeline. A conceptual map may include:
-
-```text
-Idea / Requirement
-        ↓
-Product shaping and MVP delivery
-        ↓
-Reference-led UI calibration (when visual references matter)
-        ↓
-Implementation and engineering review
-        ↓
-Testing and fix verification
-        ↓
-Release readiness
-        ↓
-Submission operations (when explicitly required)
-```
-
-Projects may enter, skip, or revisit these capabilities according to evidence and risk. The suite organizes relationships; it does not require every project to execute every stage.
+Each Skill remains an independently maintainable unit. Projects can use only the public bundles relevant to their needs; the repository does not require a universal pipeline.
 
 ## Status
 
@@ -54,7 +44,7 @@ Example uses:
 - Use `$ship-real-mvp` to turn a prototype into the smallest runnable product loop.
 - Use `$ship-real-mvp` to continue a runnable MVP without restarting valid product discovery.
 
-Testing, Code Review, Release Readiness, and Submission Operations are optional specialist integrations. The core capability remains usable without installing any of them.
+The `ship-real-mvp` bundle is usable on its own. Additional Skills will be listed here only when they become public components.
 
 ## Limitations
 
@@ -72,6 +62,6 @@ Testing, Code Review, Release Readiness, and Submission Operations are optional 
 
 ## License
 
-The repository and the packaged `ship-real-mvp` candidate use the MIT License, with `Copyright (c) 2026 GapLab` recorded in the package provenance. This reflects the Human ownership decision for the current package; future third-party additions require a new review.
+The repository and the packaged `ship-real-mvp` Skill use the MIT License, with `Copyright (c) 2026 GapLab`. This reflects the Human ownership decision for the current package; future third-party additions require a new review.
 
-See [`skills/ship-real-mvp/PROVENANCE.md`](skills/ship-real-mvp/PROVENANCE.md), [`VERSION_MANIFEST.md`](VERSION_MANIFEST.md), and [`CHANGELOG.md`](CHANGELOG.md) for the current candidate status and release history.
+See [`CHANGELOG.md`](CHANGELOG.md) for public repository and Skill history.

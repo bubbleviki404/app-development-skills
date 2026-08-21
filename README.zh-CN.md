@@ -13,29 +13,19 @@ Local Working Skills → Curated Public Skills → Stable Public Release
 本地工作 Skill → 精选公开 Skill → 稳定公开发布
 ```
 
-本地工作源需要先经过检查、验证、隐私/来源/依赖审计，再整理到这里。后续版本提升和正式 release 决策仍由 Human 控制。
+本地工作源需要先经过检查、验证和整理，再放入这里。后续版本提升和正式 release 决策仍由 Human 控制。
+
+## Skills / 当前公开 Skills
+
+### [`ship-real-mvp`](skills/ship-real-mvp/)
+
+帮助接管现有 App，并将其推进为最小可运行、以证据为基础的 MVP 闭环。
+
+每个 Skill 都是独立 bundle。项目只需选择实际相关的 Skill；只有真正整理并公开到本仓库的 Skill 才会加入此列表。
 
 ## Architecture / 架构
 
-每个 Skill 都保持独立、可维护、可单独调用。未来的 suite 只负责说明它们之间的关系，不建立强制性的 waterfall pipeline。概念上的关系可能包括：
-
-```text
-Idea / Requirement
-        ↓
-产品塑造与 MVP 交付
-        ↓
-参考图驱动的 UI 校准（仅在视觉参考重要时）
-        ↓
-实现与工程审查
-        ↓
-测试与修复验证
-        ↓
-Release Readiness
-        ↓
-Submission Operations（仅在明确需要时）
-```
-
-项目可以根据证据和风险进入、跳过或回到其中某些能力。Suite 负责组织关系，不要求每个项目执行全部阶段。
+每个 Skill 都保持独立、可维护、可单独调用。项目可以只使用与自身需求相关的公开 bundle；本仓库不要求所有项目遵循统一 pipeline。
 
 ## Status / 状态
 
@@ -55,7 +45,7 @@ GitHub repository 现已公开。`ship-real-mvp` 仍是基于一轮有边界真�
 - 使用 `$ship-real-mvp` 将 prototype 推进为最小可运行产品闭环。
 - 使用 `$ship-real-mvp` 继续一个 runnable MVP，不重新开始已经有效的产品探索。
 
-Testing、Code Review、Release Readiness 和 Submission Operations 都是 optional specialist integrations。只安装 `ship-real-mvp` 也可以使用核心能力。
+`ship-real-mvp` bundle 可以独立使用。只有新的 Skill 真正成为公开组件后，才会加入当前公开 Skills 列表。
 
 ## 当前限制
 
@@ -73,6 +63,6 @@ Testing、Code Review、Release Readiness 和 Submission Operations 都是 optio
 
 ## License / 许可证
 
-本仓库以及已打包的 `ship-real-mvp` 候选使用 MIT License，package provenance 中记录 `Copyright (c) 2026 GapLab`。这是对当前 package 的 Human ownership decision；未来加入第三方内容时仍需重新审核。
+本仓库以及已打包的 `ship-real-mvp` Skill 使用 MIT License，版权标注为 `Copyright (c) 2026 GapLab`。这是对当前 package 的 Human ownership decision；未来加入第三方内容时仍需重新审核。
 
-当前状态和 release history 见 [`skills/ship-real-mvp/PROVENANCE.md`](skills/ship-real-mvp/PROVENANCE.md)、[`VERSION_MANIFEST.md`](VERSION_MANIFEST.md) 和 [`CHANGELOG.md`](CHANGELOG.md)。
+公开仓库和 Skill 的历史记录见 [`CHANGELOG.md`](CHANGELOG.md)。
