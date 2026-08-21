@@ -1,11 +1,9 @@
 ---
 name: ios-release-readiness
-description: Verify that one exact iOS Release Candidate is technically coherent, release-configured, evidence-backed, and ready to enter App Store Submission Operations. Use after MVP2.0 when a Trusted Engineering Baseline and current Testing/user evidence exist, or when release-specific configuration, package, privacy, dependency, sensitive-data, asset, Release-mode behavior, Final Candidate, evidence binding, or readiness status must be inspected. Route product testing to testing, engineering-baseline review to code-review, and unstable product direction to ship-real-mvp; do not Archive, Validate, upload, submit, or publish.
+description: Verify that one exact iOS Release Candidate is technically coherent, release-configured, evidence-backed, and ready to enter App Store Submission Operations. Use with a stable, actively tested MVP or existing product with current engineering and testing evidence, or when release-specific configuration, package, privacy, dependency, sensitive-data, asset, Release-mode behavior, Final Candidate, evidence binding, or readiness status must be inspected. Route product testing to testing, engineering-baseline review to code-review, and unstable product direction to ship-real-mvp; do not Archive, Validate, upload, submit, or publish.
 ---
 
 # iOS Release Readiness
-
-Status: **Pilot Ready**. Validate this version through the first complete real-App Release path before calling it Production Proven.
 
 ## Definition
 
@@ -19,7 +17,7 @@ Do not answer whether the whole product is bug-free or desired by users; that is
 
 Normally enter with:
 
-- MVP2.0;
+- a stable, actively tested MVP or existing product with current engineering and testing evidence;
 - a current Trusted Engineering Baseline, its Source Identity, and Remaining Engineering Risk;
 - current Testing Campaign or Final Broad Testing handoff plus relevant regression, user, and physical-device evidence;
 - `PRODUCT.md`, `ENGINEERING.md`, current source, release assets, privacy/support information, and any identifiable Release product or existing Archive.
