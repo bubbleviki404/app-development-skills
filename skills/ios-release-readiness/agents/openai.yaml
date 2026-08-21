@@ -1,0 +1,5 @@
+interface:
+  name: "ios-release-readiness"
+  display_name: "iOS Release Readiness"
+  short_description: "Verify one exact iOS Candidate for submission operations"
+  default_prompt: "Use $ios-release-readiness to verify this exact iOS Release Candidate, bind current evidence, and decide Ready for Submission Operations or Blocked without archiving, uploading, submitting, or publishing."

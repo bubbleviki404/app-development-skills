@@ -32,6 +32,10 @@ Verify engineering risks, repair safe findings, and establish or update a truste
 
 Run coverage-driven real-app testing across product surfaces and risk dimensions, and independently verify implemented fixes.
 
+### [`ios-release-readiness`](skills/ios-release-readiness/)
+
+Verify one exact iOS Release Candidate and decide whether it can safely enter App Store Submission Operations.
+
 Each Skill is an independent bundle. Choose only the Skills relevant to your project; new Skills are listed here only after they are publicly curated in this repository.
 
 ## Architecture
@@ -40,15 +44,15 @@ Each Skill remains an independently maintainable unit. Projects can use only the
 
 ## Status
 
-**Repository Published · `ship-real-mvp`, `adapt-ui-from-references`, `code-review`, and `testing` Public Release Candidates**
+**Repository Published · `ship-real-mvp`, `adapt-ui-from-references`, `code-review`, `testing`, and `ios-release-readiness` Public Release Candidates**
 
-This GitHub repository is public. `ship-real-mvp` remains a Public Release Candidate based on one bounded direct real-App pilot, and its Human Packaging Review has passed. `adapt-ui-from-references`, `code-review`, and `testing` are Public Release Candidates based on their curated public bundles; no Skill is declared Released v1.0 here. The capabilities are not production-proven. Future version promotion, tags, GitHub Releases, package publication, and other release actions remain Human-controlled.
+This GitHub repository is public. `ship-real-mvp` remains a Public Release Candidate based on one bounded direct real-App pilot, and its Human Packaging Review has passed. `adapt-ui-from-references`, `code-review`, `testing`, and `ios-release-readiness` are Public Release Candidates based on their curated public bundles; no Skill is declared Released v1.0 here. The capabilities are not production-proven. Future version promotion, tags, GitHub Releases, package publication, and other release actions remain Human-controlled.
 
 ## Install / Use
 
 Each directory under `skills/` is a distributable Skill bundle. On a host that supports Agent Skills, use that host's Skill import or installation mechanism to install or import the directory. This repository does not assume a universal installation path.
 
-Invoke `$ship-real-mvp`, `$adapt-ui-from-references`, `$code-review`, or `$testing` where the host supports explicit Skill invocation.
+Invoke `$ship-real-mvp`, `$adapt-ui-from-references`, `$code-review`, `$testing`, or `$ios-release-readiness` where the host supports explicit Skill invocation.
 
 Example uses:
 
@@ -58,6 +62,7 @@ Example uses:
 - Use `$adapt-ui-from-references` to turn visual references into one calibrated core screen before scaling the UI.
 - Use `$code-review` to verify engineering risks, repair safe findings, and establish or update a trusted engineering baseline.
 - Use `$testing` to discover product bugs through risk-driven real-app coverage or independently verify an implemented fix.
+- Use `$ios-release-readiness` to inspect one exact iOS Release Candidate and decide whether it can enter submission operations.
 
 Each listed bundle is usable on its own. Additional Skills will be listed here only when they become public components.
 
