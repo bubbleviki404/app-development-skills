@@ -20,6 +20,10 @@ The local working source is inspected, validated, and curated here. Future versi
 
 Take over an existing app and move it toward the smallest runnable, evidence-aware MVP loop.
 
+### [`adapt-ui-from-references`](skills/adapt-ui-from-references/)
+
+Analyze visual references, calibrate one high-fidelity core screen, and expand only after the visual baseline is approved.
+
 Each Skill is an independent bundle. Choose only the Skills relevant to your project; new Skills are listed here only after they are publicly curated in this repository.
 
 ## Architecture
@@ -28,28 +32,29 @@ Each Skill remains an independently maintainable unit. Projects can use only the
 
 ## Status
 
-**Repository Published · `ship-real-mvp` Public Release Candidate**
+**Repository Published · `ship-real-mvp` and `adapt-ui-from-references` Public Release Candidates**
 
-This GitHub repository is public. `ship-real-mvp` remains a Public Release Candidate based on one bounded direct real-App pilot, and its Human Packaging Review has passed. No Skill is declared Released v1.0 here. The capability is not production-proven. Future version promotion, tags, GitHub Releases, package publication, and other release actions remain Human-controlled.
+This GitHub repository is public. `ship-real-mvp` remains a Public Release Candidate based on one bounded direct real-App pilot, and its Human Packaging Review has passed. `adapt-ui-from-references` is a Public Release Candidate based on its curated public bundle; no Skill is declared Released v1.0 here. The capabilities are not production-proven. Future version promotion, tags, GitHub Releases, package publication, and other release actions remain Human-controlled.
 
 ## Install / Use
 
-`skills/ship-real-mvp/` is a distributable Skill bundle. On a host that supports Agent Skills, use that host's Skill import or installation mechanism to install or import the directory. This repository does not assume a universal installation path.
+Each directory under `skills/` is a distributable Skill bundle. On a host that supports Agent Skills, use that host's Skill import or installation mechanism to install or import the directory. This repository does not assume a universal installation path.
 
-Invoke `$ship-real-mvp` where the host supports explicit Skill invocation.
+Invoke `$ship-real-mvp` or `$adapt-ui-from-references` where the host supports explicit Skill invocation.
 
 Example uses:
 
 - Use `$ship-real-mvp` to take over an existing app and continue from its current reality.
 - Use `$ship-real-mvp` to turn a prototype into the smallest runnable product loop.
 - Use `$ship-real-mvp` to continue a runnable MVP without restarting valid product discovery.
+- Use `$adapt-ui-from-references` to turn visual references into one calibrated core screen before scaling the UI.
 
-The `ship-real-mvp` bundle is usable on its own. Additional Skills will be listed here only when they become public components.
+Each listed bundle is usable on its own. Additional Skills will be listed here only when they become public components.
 
 ## Limitations
 
 - Current evidence includes one bounded direct real-App pilot.
-- The capability is not production-proven.
+- The published capabilities are not production-proven.
 - Not every optional specialist route has direct validation.
 - Future version promotion, tags, GitHub Releases, and other release actions remain Human-controlled.
 
@@ -62,6 +67,6 @@ The `ship-real-mvp` bundle is usable on its own. Additional Skills will be liste
 
 ## License
 
-The repository and the packaged `ship-real-mvp` Skill use the MIT License, with `Copyright (c) 2026 GapLab`. This reflects the Human ownership decision for the current package; future third-party additions require a new review.
+The repository and the packaged Skills use the MIT License, with `Copyright (c) 2026 GapLab`. This reflects the Human ownership decision for the current packages; future third-party additions require a new review.
 
 See [`CHANGELOG.md`](CHANGELOG.md) for public repository and Skill history.

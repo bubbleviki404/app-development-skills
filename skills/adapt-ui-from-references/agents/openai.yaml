@@ -1,0 +1,4 @@
+interface:
+  display_name: "Reference UI"
+  short_description: "Calibrate one real core screen before scaling UI"
+  default_prompt: "Use $adapt-ui-from-references to analyze my references, calibrate one real core screen, and then route the approved direction to HTML, Figma, or target code."

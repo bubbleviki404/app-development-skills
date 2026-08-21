@@ -21,6 +21,10 @@ Local Working Skills → Curated Public Skills → Stable Public Release
 
 帮助接管现有 App，并将其推进为最小可运行、以证据为基础的 MVP 闭环。
 
+### [`adapt-ui-from-references`](skills/adapt-ui-from-references/)
+
+分析视觉参考，校准一个高保真的核心界面，并在视觉基线获得批准后再扩展 UI。
+
 每个 Skill 都是独立 bundle。项目只需选择实际相关的 Skill；只有真正整理并公开到本仓库的 Skill 才会加入此列表。
 
 ## Architecture / 架构
@@ -29,28 +33,29 @@ Local Working Skills → Curated Public Skills → Stable Public Release
 
 ## Status / 状态
 
-**GitHub 仓库已公开 · `ship-real-mvp` 仍为 Public Release Candidate**
+**GitHub 仓库已公开 · `ship-real-mvp` 与 `adapt-ui-from-references` 均为 Public Release Candidate**
 
-GitHub repository 现已公开。`ship-real-mvp` 仍是基于一轮有边界真实 App direct pilot 的 Public Release Candidate，Human Packaging Review 已通过。没有任何 Skill 被声明为 Released v1.0；该能力不是 production-proven。后续版本提升、Tag、GitHub Release、package publication 及其他正式 release 操作仍由 Human 控制。
+GitHub repository 现已公开。`ship-real-mvp` 仍是基于一轮有边界真实 App direct pilot 的 Public Release Candidate，Human Packaging Review 已通过；`adapt-ui-from-references` 是基于当前整理后公开 bundle 的 Public Release Candidate。没有任何 Skill 被声明为 Released v1.0；这些能力都不是 production-proven。后续版本提升、Tag、GitHub Release、package publication 及其他正式 release 操作仍由 Human 控制。
 
 ## 安装 / 使用
 
-`skills/ship-real-mvp/` 是可分发的 Skill bundle。对于支持 Agent Skills 的 host，请使用该 host 提供的 Skill import 或 installation mechanism 安装或导入此目录。本仓库不假设所有平台共用同一个安装路径。
+`skills/` 下的每个目录都是可分发的 Skill bundle。对于支持 Agent Skills 的 host，请使用该 host 提供的 Skill import 或 installation mechanism 安装或导入对应目录。本仓库不假设所有平台共用同一个安装路径。
 
-在 host 支持显式 Skill invocation 时，使用 `$ship-real-mvp` 调用。
+在 host 支持显式 Skill invocation 时，使用 `$ship-real-mvp` 或 `$adapt-ui-from-references` 调用。
 
 示例：
 
 - 使用 `$ship-real-mvp` 接管现有 App，并从当前真实状态继续工作。
 - 使用 `$ship-real-mvp` 将 prototype 推进为最小可运行产品闭环。
 - 使用 `$ship-real-mvp` 继续一个 runnable MVP，不重新开始已经有效的产品探索。
+- 使用 `$adapt-ui-from-references` 将视觉参考整理为一个经过校准的核心界面，再扩展 UI。
 
-`ship-real-mvp` bundle 可以独立使用。只有新的 Skill 真正成为公开组件后，才会加入当前公开 Skills 列表。
+列表中的每个 bundle 都可以独立使用。只有新的 Skill 真正成为公开组件后，才会加入当前公开 Skills 列表。
 
 ## 当前限制
 
 - 当前证据包含一轮有边界的真实 App direct pilot。
-- 该能力不是 production-proven。
+- 已公开的能力都不是 production-proven。
 - 并非每一条 optional specialist route 都有 direct validation。
 - 后续版本提升、Tag、GitHub Release 及其他正式 release 操作仍由 Human 控制。
 
@@ -63,6 +68,6 @@ GitHub repository 现已公开。`ship-real-mvp` 仍是基于一轮有边界真�
 
 ## License / 许可证
 
-本仓库以及已打包的 `ship-real-mvp` Skill 使用 MIT License，版权标注为 `Copyright (c) 2026 GapLab`。这是对当前 package 的 Human ownership decision；未来加入第三方内容时仍需重新审核。
+本仓库以及已打包的 Skills 使用 MIT License，版权标注为 `Copyright (c) 2026 GapLab`。这是对当前 packages 的 Human ownership decision；未来加入第三方内容时仍需重新审核。
 
 公开仓库和 Skill 的历史记录见 [`CHANGELOG.md`](CHANGELOG.md)。
