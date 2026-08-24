@@ -1,29 +1,20 @@
 # GapLab App Development Skills
 
-GapLab App Development Skills 是 GapLab 面向公开发布整理的一组模块化 App Development Skills 仓库。
+GapLab App Development Skills 是一组面向 App 开发、可模块化且可独立使用的 Agent Skills。
 
 ## What / 是什么
 
-本集合把真实 App 开发中形成并持续验证的协作模式整理为可组合的 Skills。目标不是建立一套 universal SOP，而是提供 modular、composable、risk-based 的能力：项目只在确有相关风险或需求时独立调用对应 Skill。
+本集合将实践中的 App 开发协作模式整理为可组合的 Skills。整体设计强调 modular、composable、risk-based，而不是一套 universal SOP：只有在某个 Skill 的能力与当前需求相关时，才独立调用它。
 
-本仓库是 curated public release channel，不是本地工作目录的备份，也不是本地 Skill 的第二个 source of truth。正常方向是：
-
-```text
-Local Working Skills → Curated Public Skills → Stable Public Release
-本地工作 Skill → 精选公开 Skill → 稳定公开发布
-```
-
-本地工作源需要先经过检查、验证和整理，再放入这里。后续版本提升和正式 release 决策仍由 Human 控制。
-
-## Skills / 当前公开 Skills
+## Skills / 技能
 
 ### [`ship-real-mvp`](skills/ship-real-mvp/)
 
-帮助接管现有 App，并将其推进为最小可运行、以证据为基础的 MVP 闭环。
+接管现有 App，并将其推进到最小可运行、以证据为基础的 MVP 闭环。
 
 ### [`adapt-ui-from-references`](skills/adapt-ui-from-references/)
 
-分析视觉参考，校准一个高保真的核心界面，并在视觉基线获得批准后再扩展 UI。
+分析视觉参考，校准一个高保真的核心界面，再以该基线扩展。
 
 ### [`code-review`](skills/code-review/)
 
@@ -31,63 +22,57 @@ Local Working Skills → Curated Public Skills → Stable Public Release
 
 ### [`testing`](skills/testing/)
 
-围绕产品面和风险维度执行 coverage-driven 的真实 App 测试，并独立验证已实现的修复。
+执行 risk-driven 的真实 App 测试，并独立验证修复结果。
 
 ### [`ios-release-readiness`](skills/ios-release-readiness/)
 
-验证一个明确的 iOS Release Candidate，并判断它是否可以安全进入 App Store 提交流程。
+在进入提交流程前，验证一个明确的 iOS Release Candidate。
 
 ### [`ios-submission-ops`](skills/ios-submission-ops/)
 
-带领一个 Ready Final Candidate 完成 Apple Developer、App Store Connect、Archive、Validate、Upload、Submit for Review，并确认进入 Waiting for Review。
-
-每个 Skill 都是独立 bundle。项目只需选择实际相关的 Skill；只有真正整理并公开到本仓库的 Skill 才会加入此列表。
+带领一个 Ready Final Candidate 完成 Apple 提交流程，并确认进入 Waiting for Review。
 
 ## Architecture / 架构
 
-每个 Skill 都保持独立、可维护、可单独调用。项目可以只使用与自身需求相关的公开 bundle；本仓库不要求所有项目遵循统一 pipeline。
-
-## Status / 状态
-
-**GitHub 仓库已公开 · `ship-real-mvp`、`adapt-ui-from-references`、`code-review`、`testing`、`ios-release-readiness` 与 `ios-submission-ops` 均为 Public Release Candidate**
-
-GitHub repository 现已公开。`ship-real-mvp` 仍是基于一轮有边界真实 App direct pilot 的 Public Release Candidate，Human Packaging Review 已通过；`adapt-ui-from-references`、`code-review`、`testing`、`ios-release-readiness` 与 `ios-submission-ops` 是基于当前整理后公开 bundle 的 Public Release Candidate。没有任何 Skill 被声明为 Released v1.0；这些能力都不是 production-proven。后续版本提升、Tag、GitHub Release、package publication 及其他正式 release 操作仍由 Human 控制。
+每个 Skill 都是独立、可维护的 bundle。项目可以只使用与自身需求相关的 bundle；不要求遵循统一 pipeline。
 
 ## 安装 / 使用
 
-`skills/` 下的每个目录都是可分发的 Skill bundle。对于支持 Agent Skills 的 host，请使用该 host 提供的 Skill import 或 installation mechanism 安装或导入对应目录。本仓库不假设所有平台共用同一个安装路径。
+`skills/` 下的每个目录都是 Skill bundle。对于支持 Agent Skills 的 host，请使用该 host 提供的 import 或 installation mechanism 安装或导入对应目录。本仓库不假设所有平台共用同一个安装路径。
 
-在 host 支持显式 Skill invocation 时，使用 `$ship-real-mvp`、`$adapt-ui-from-references`、`$code-review`、`$testing`、`$ios-release-readiness` 或 `$ios-submission-ops` 调用。
+在 host 支持显式 Skill invocation 时，可以使用 `$ship-real-mvp`、`$adapt-ui-from-references`、`$code-review`、`$testing`、`$ios-release-readiness` 或 `$ios-submission-ops`。
 
 示例：
 
 - 使用 `$ship-real-mvp` 接管现有 App，并从当前真实状态继续工作。
-- 使用 `$ship-real-mvp` 将 prototype 推进为最小可运行产品闭环。
-- 使用 `$ship-real-mvp` 继续一个 runnable MVP，不重新开始已经有效的产品探索。
 - 使用 `$adapt-ui-from-references` 将视觉参考整理为一个经过校准的核心界面，再扩展 UI。
-- 使用 `$code-review` 验证工程风险、修复安全的问题，并建立或更新可信工程基线。
-- 使用 `$testing` 通过 risk-driven 的真实 App 覆盖发现产品 Bug，或独立验证已实现的修复。
-- 使用 `$ios-release-readiness` 检查一个明确的 iOS Release Candidate，并判断它是否可以进入 App Store 提交流程。
+- 使用 `$code-review` 验证工程风险，并建立或更新可信工程基线。
+- 使用 `$testing` 通过 risk-driven 的真实 App 覆盖发现产品 Bug，或独立验证修复。
+- 使用 `$ios-release-readiness` 在提交流程前检查一个明确的 iOS Release Candidate。
 - 使用 `$ios-submission-ops` 带领一个 Ready Final Candidate 完成提交流程，并确认进入 Waiting for Review。
 
-列表中的每个 bundle 都可以独立使用。只有新的 Skill 真正成为公开组件后，才会加入当前公开 Skills 列表。
+## Status / 状态
 
-## 当前限制
+本仓库当前包含六个公开 Skill bundle：
 
-- 当前证据包含一轮有边界的真实 App direct pilot。
-- 已公开的能力都不是 production-proven。
-- 并非每一条 optional specialist route 都有 direct validation。
-- 后续版本提升、Tag、GitHub Release 及其他正式 release 操作仍由 Human 控制。
+- `ship-real-mvp`
+- `adapt-ui-from-references`
+- `code-review`
+- `testing`
+- `ios-release-readiness`
+- `ios-submission-ops`
 
-## Scope and boundaries / 范围与边界
+这些 Skills 都可以作为独立 bundle 使用。不同 Skill 的验证深度有所不同；当前范围和限制请参阅各 Skill 文档及仓库历史。
 
-- 本地工作 Skill 继续以其本地 source of truth 为准。
-- 本仓库只应包含经过整理、适合该公开渠道的内容。
-- 本地文件存在、成功执行、benchmark 或已有公开仓库副本，都不能单独证明 production maturity 或 public release readiness。
-- 私有项目名、凭据、个人数据、session ID、机器相关路径、第三方媒体和许可证不清晰的内容，在纳入前都需要审核。
+## Limitations / 限制
+
+- 不同 Skill 的验证深度有所不同。
+- 本仓库发布的 Skills 不声称已在每种环境中经过生产验证。
+- 部分可选 specialist route 可能缺少直接验证。
+- 不同 host 对 Agent Skills 和显式 Skill invocation 的支持有所不同。
 
 ## License / 许可证
 
-本仓库以及已打包的 Skills 使用 MIT License，版权标注为 `Copyright (c) 2026 GapLab`。这是对当前 packages 的 Human ownership decision；未来加入第三方内容时仍需重新审核。
+本仓库及其中包含的 Skill bundle 使用 MIT License。Copyright (c) 2026 GapLab。详见 [`LICENSE`](LICENSE)。
 
-公开仓库和 Skill 的历史记录见 [`CHANGELOG.md`](CHANGELOG.md)。
+仓库和 Skill 的历史记录见 [`CHANGELOG.md`](CHANGELOG.md)。
